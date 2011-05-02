@@ -11,7 +11,7 @@ class FacebookConfigGenerator < Rails::Generators::Base
     generate("scaffold", "facebook_config account_name:string account_number:integer priority:integer area_id:integer")
     remove_file "./app/models/facebook_config.rb"
     template "facebook_config_model.rb", "./app/models/facebook_config.rb"
-    template "faceboob_config_iPhone.rb", "./app/controllers/facebook_controller.rb"
+    template "facebook_config_iPhone.rb", "./app/controllers/facebook_controller.rb"
   end
 
 end
