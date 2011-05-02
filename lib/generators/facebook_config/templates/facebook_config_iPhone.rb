@@ -4,7 +4,7 @@ class FacebookController < ApplicationController
     if (params[:area_id].nil?)
       facebook = Facebook.getAll
     else
-      facebook = Facebool.getFacebook(params[:area_id].to_i)
+      facebook = Facebook.getFacebook(params[:area_id].to_i)
     end
 
     if (facebook.nil? || facebool.empty?)
