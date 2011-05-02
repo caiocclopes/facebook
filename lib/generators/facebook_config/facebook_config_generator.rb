@@ -8,7 +8,7 @@ class FacebookConfigGenerator < Rails::Generators::Base
   end
 
   def generate_scaffold
-    generate("scaffold", "facebook_config account_name:string account_id:string priority:integer area_id:integer")
+    generate("scaffold", "facebook_config account_name:string account_number:integer priority:integer area_id:integer")
     remove_file "./app/models/facebook_config.rb"
     template "facebook_config_model.rb", "./app/models/facebook_config.rb"
   end
